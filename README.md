@@ -1,2 +1,1 @@
-# AquamanSite
-A Promotional Site for the movie Aquaman
+# web-2-starter
