@@ -1,3 +1,232 @@
+/* PRESENTATION
+* CSS: https://cssreference.io
+*https://daneden.github.io/animate.css
+*/
+
 body {
-    background: teal;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  background-image: url("https://images.unsplash.com/photo-1524275804141-5e9f2bc5a71d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"); /**/
+  background-color: slategray;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*****Nav Bar Syles*********************************/
+
+nav {
+  box-size: border-box;
+  height: 20px; 
+  background-color: rgba(30,40,50,.65);
+  padding: 15px 0px;
+}
+
+#top-nav{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+/******* Page Title and Quote *********************************/
+
+header {
+  text-align: center;
+  font-family: "Major Mono Display", monospace;
+}
+
+#heading {
+  font-size: 56px;
+  margin-bottom: 4%;
+}
+header p {
+  font-size: 18px;
+}
+
+header, main, .grid-wrapper {
+  padding: 0 10%;
+}
+
+/******* Custom Media Player *********************************/
+
+.mejs__container, .mejs__container-keyboard-inactive, 
+.mejs__video, .mejs__poster .mejs__layer, .mejs__overlay .mejs__layer{
+  width: 80vw !important;
+  margin: auto;
+}
+
+.mejs__time {
+  font-size: 1em;
+}
+
+.mejs__time-current {
+  background: slategray;
+}
+
+video {
+  width: 100%; 
+  margin-bottom: 8%;
+}
+
+.mejs__button button[title="Play"] {
+	border-color: transparent white;
+  border-style: solid;
+	border-width: 10px 0px 10px 15px;
+}
+
+.mejs__button button[title="Pause"] {
+  background: white;
+}
+
+.mejs__button button[title="Mute"] {
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/09/20/48/speaker-2488096_1280.png');
+  background-size: contain;
+}
+
+.mejs__button button[title="Unmute"] {
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/09/20/48/speaker-2488096_1280.png');
+  background-size: contain;
+}
+
+.mejs__button button[title="Fullscreen"] {
+  border: dashed 2px white;
+}
+
+/******* Synopsis and Trailer Grid *********************************/
+
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 3%;
+  align-items: center;
+}
+
+#synopsis {
+   grid-row: span 2;
+}
+
+/******* Cast Grid / Poster Styles *********************************/
+
+#cast {
+  display: grid;
+  grid-template-rows: repeat(4, 100vw);
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 4%;
+  text-align: left;
+}
+
+.poster {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+#jason {
+  background-image: url('https://www.slashfilm.com/wp/wp-content/images/aquaman_ver4_xlg.jpg');
+}
+
+#amber {
+  background-image: url('https://cdn1.thr.com/sites/default/files/2018/11/aquaman_-_publicity_-_embed_1.jpg');
+}
+
+#will {
+  background-image: url('https://www.joblo.com/assets/images/joblo/posters/2018/11/aquaman-charaposter7-xl.jpg');
+}
+
+#pat {
+  background-image: url('https://assets1.ignimgs.com/2018/11/07/aqamn-vert-kingorm-dom-2764x4096-master-1541616327660_1280w.jpg');
+  background-position: 0 0;
+}
+
+.name {
+  color: white;
+  padding: 45% 10% 10% 10%;
+  background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.8) 40%);
+}
+
+.name h4 {
+  margin: 0;
+  margin-bottom: 4%;
+  font-size: 24px;
+  font-style: italic;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: -webkit-linear-gradient(85deg, #5cccc2, white 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
+
+/******* Other Text Styles *********************************/
+
+p {
+   line-height: 130%;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/******* Responsive Media Queries *********************************/
+
+
+@media (min-width: 550px) {
+  #cast {
+  grid-template-rows: repeat(2, 50vw);
+  grid-template-columns: repeat(2, 1fr);
   }
+  main {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 0;
+  }
+  #synopsis {
+  grid-row: span 0;
+ /* column-count: 2; /**/
+  }
+  #synopsis h2 {
+    /*column-span: all;/**/
+  }
+}
+
+@media (min-width: 1200px) {
+  #cast {
+    grid-template-rows: repeat(1, 30vw);
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5% 0 5% 0;
+  }
+  main {
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  margin: 5% 0 5% 0;
+  }
+   .mejs__container, .mejs__container-keyboard-inactive, 
+.mejs__video, .mejs__poster .mejs__layer, .mejs__overlay .mejs__layer {
+  width: 50vw !important;
+  }
+  video {
+  grid-column: span 1;
+  }
+  #synopsis {
+    grid-column: span 2;
+  }    
+  
+}
+
