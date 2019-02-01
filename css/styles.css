@@ -55,8 +55,9 @@ header, main, .grid-wrapper {
 
 /******* Custom Media Player *********************************/
 
-video {
-  max-width: 100%;
+#mep_0, video, .mejs_controls, .mejs__container, .mejs__container-keyboard-inactive, 
+.mejs__android, .mejs__video, .mjs_mediaelement, .mejs__overlay, .mejs__layer, .mejs__overlay-play, .mejs_inner {
+  width: 100% !important;
 }
 
 /******* Synopsis and Trailer Grid *********************************/
@@ -67,6 +68,7 @@ main {
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 3%;
   align-items: center;
+  justify-content: center;
 }
 
 #synopsis {
@@ -123,6 +125,7 @@ main {
   font-style: italic;
 }
 
+/******* Other Text Styles *********************************/
 a {
   color: white;
   text-decoration: none;
@@ -134,8 +137,6 @@ nav a:hover {
   -webkit-text-fill-color: transparent;
   font-size: 18px;
 }
-
-/******* Other Text Styles *********************************/
 
 p {
    line-height: 130%;
@@ -160,10 +161,6 @@ h2 {
   }
   #synopsis {
   grid-row: span 0;
- /* column-count: 2; /**/
-  }
-  #synopsis h2 {
-    /*column-span: all;/**/
   }
 }
 
@@ -178,10 +175,10 @@ h2 {
     grid-template-columns: repeat(5, 1fr);
     margin: 5% 0 5% 0;
   }
-
-  video {
-  grid-column: span 2;
+  #mep_0, video {
+  grid-column: span 3;
   }
+
   #synopsis {
     grid-column: span 2;
   }    
