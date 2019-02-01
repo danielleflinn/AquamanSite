@@ -55,9 +55,9 @@ header, main, .grid-wrapper {
 
 /******* Custom Media Player *********************************/
 
-#mep_0, video, .mejs_controls, .mejs__container, .mejs__container-keyboard-inactive, 
-.mejs__android, .mejs__video, .mjs_mediaelement, .mejs__overlay, .mejs__layer, .mejs__overlay-play, .mejs_inner {
+video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
   width: 100% !important;
+  height: 100% !important;
 }
 
 /******* Synopsis and Trailer Grid *********************************/
@@ -175,7 +175,7 @@ h2 {
     grid-template-columns: repeat(5, 1fr);
     margin: 5% 0 5% 0;
   }
-  #mep_0, video {
+  video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer  {
   grid-column: span 3;
   }
 
