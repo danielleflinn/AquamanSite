@@ -79,6 +79,10 @@ main {
    grid-row: span 2;
 }
 
+#synopsis a {
+  text-decoration: underline;
+}
+
 /******* Cast Grid / Poster Styles *********************************/
 
 #cast {
