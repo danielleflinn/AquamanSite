@@ -7,7 +7,7 @@ body {
   color: white;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  background-image: url("https://images.unsplash.com/photo-1524275804141-5e9f2bc5a71d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80"); /**/
+  background-image: url("../img/water.jpeg"); /**/
   background-color: slategray;
   background-blend-mode: multiply;
   background-attachment: fixed;
@@ -28,6 +28,7 @@ nav {
   margin: 0;
   display: flex;
   justify-content: space-around;
+  margin: 0 10%;
 }
 
 nav ul {
@@ -68,10 +69,9 @@ video {
 
 main {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 50vw);
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 3%;
-  align-items: center;
   justify-content: center;
 }
 
@@ -96,23 +96,29 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  
+}
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;  
+  margin-inline-end: 0;
 }
 
 #jason {
-  background-image: url('https://www.slashfilm.com/wp/wp-content/images/aquaman_ver4_xlg.jpg');
+  background-image: url('../img/posters/arthur.jpg');
 }
 
 #amber {
-  background-image: url('https://cdn1.thr.com/sites/default/files/2018/11/aquaman_-_publicity_-_embed_1.jpg');
+  background-image: url('../img/posters/mera.jpg');
 }
 
 #will {
-  background-image: url('https://www.joblo.com/assets/images/joblo/posters/2018/11/aquaman-charaposter7-xl.jpg');
+  background-image: url('../img/posters/vulko.jpg');
 }
 
 #pat {
-  background-image: url('https://assets1.ignimgs.com/2018/11/07/aqamn-vert-kingorm-dom-2764x4096-master-1541616327660_1280w.jpg');
+  background-image: url('../img/posters/orm.jpg');
   background-position: 0 0;
 }
 
@@ -152,22 +158,21 @@ h2 {
 
 /******* Responsive Media Queries *********************************/
 
-
 @media (min-width: 550px) {
   #cast {
   grid-template-rows: repeat(2, 50vw);
   grid-template-columns: repeat(2, 1fr);
   }
   main {
-  grid-template-rows: repeat(2, 50vw);
+  grid-template-rows: repeat(3, 25vw);
   grid-template-columns: repeat(1, 1fr);
   }
-  #synopsis {
-  grid-row: span 0;
+  video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
+  grid-row: span 2;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   #cast {
     grid-template-rows: repeat(1, 30vw);
     grid-template-columns: repeat(4, 1fr);
