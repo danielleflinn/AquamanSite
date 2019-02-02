@@ -18,9 +18,9 @@ body {
 
 nav {
   -webkit-box-size: border-box;
-  height: 20px; 
+  height: 25px; 
   background-color: rgba(30,40,50,.65);
-  padding: 15px 0px;
+  padding: 20px 0px;
 }
 
 #top-nav{
@@ -139,6 +139,44 @@ figure {
   font-style: italic;
 }
 
+/******** Social Side Nav*****************/
+
+#social-nav {
+  position: fixed;
+  width: 25px;
+  height: 90px;
+  background-color: rgba(30,40,50,1);
+  border-radius: 0 15px 15px 0;
+  top: 40vh;
+  left: 0;
+}
+
+.social {
+  position: relative;
+  list-style: none;
+}
+
+#facebook, #instagram, #twitter {
+  position: absolute;
+  height: 10px;
+  left: 5px;
+}
+
+#facebook {
+  top: -5px;
+  left: 11px;
+}
+
+#twitter {
+  top: 30px;
+}
+
+#instagram {
+  top: 65px;
+}
+
+
+
 /******* Footer ***************************/
 
 footer {
@@ -171,16 +209,25 @@ h2 {
 
 @media (min-width: 550px) {
   #cast {
-  grid-template-rows: repeat(2, 50vw);
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50vw);
+    grid-template-columns: repeat(2, 1fr);
   }
   main {
-  grid-template-rows: repeat(3, 25vw);
-  grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 25vw);
+    grid-template-columns: repeat(1, 1fr);
   }
   video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
-  grid-row: span 2;
+    
   }
+  #social-nav {
+    width: 35px;
+    height: 110px;
+  }
+  #facebook, #twitter, #instagram {
+    height: 18px;
+  }
+
+ 
 }
 
 @media (min-width: 1100px) {
