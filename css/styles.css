@@ -60,7 +60,9 @@ video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
   height: 100% !important;
 }
 
-
+video {
+  max-width: 100%;
+}
 
 /******* Synopsis and Trailer Grid *********************************/
 
@@ -157,16 +159,11 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   }
   main {
-  display: block;
+  grid-template-rows: repeat(2, 30vw);
+  grid-template-columns: repeat(1, 1fr);
   }
-  
-  #vid-wrapper {
-    width: 70vw;
-    height: 40vw;
-    margin: 0 auto;
-  }
-  header, main, .grid-wrapper {
-    padding: 0 15%;
+  #synopsis {
+  grid-row: span 0;
   }
 }
 
@@ -177,8 +174,18 @@ h2 {
     margin: 5% 0 5% 0;
   }
   main {
-    display: block;
+    grid-template-rows: repeat(1, 28vw);
+    grid-template-columns: repeat(5, 1fr);
+    margin: 5% 0 5% 0;
   }
+  video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
+    grid-column: span 3;
+  }  
+
+
+  #synopsis {
+    grid-column: span 2;
+  }    
   
 }
 
