@@ -187,6 +187,7 @@ footer ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  font-size: 18px;
 }
 
 footer li {
@@ -199,7 +200,7 @@ a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, footer a:hover {
   background: -webkit-linear-gradient(85deg, #5cccc2, white 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -220,6 +221,7 @@ h2 {
   #cast {
     grid-template-rows: repeat(2, 50vw);
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25%;
   }
   main {
     grid-template-rows: repeat(3, 25vw);
