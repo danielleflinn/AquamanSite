@@ -65,6 +65,22 @@ video {
   max-width: 100%;
 }
 
+button, .mejs__overlay-button, .mejs__overlay-loading {
+  filter: brightness(0.8) sepia(1) hue-rotate(130deg) saturate(1.6);
+}
+
+button:hover{
+  filter: brightness(0.5) sepia(1) hue-rotate(130deg) saturate(1.6);
+}
+
+.mejs__time-current {
+  background-color: rgb(151,222,223);
+}
+
+.mejs__time {
+  color: rgb(151,222,223);
+}
+
 /******* Synopsis and Trailer Grid *********************************/
 
 main {
@@ -139,6 +155,12 @@ figure {
   font-style: italic;
 }
 
+figcaption h4:hover {
+  background: -webkit-linear-gradient(85deg, #5cccc2, white 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /******** Social Side Nav*****************/
 
 #social-nav {
@@ -183,6 +205,7 @@ footer {
 }
 
 footer ul {
+  -webkit-box-size: border-box;
   width: 100%;
   list-style: none;
   display: flex;
@@ -197,6 +220,9 @@ footer li {
 /******* Other Text Styles *********************************/
 a {
   color: white;
+}
+
+nav a, #cast a {
   text-decoration: none;
 }
 
