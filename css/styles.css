@@ -226,11 +226,11 @@ nav a, #cast a {
   text-decoration: none;
 }
 
-nav a:hover, footer a:hover {
+a:hover {
   background: -webkit-linear-gradient(85deg, #5cccc2, white 80%);
   -webkit-background-clip: text;
+  -webkit-background-clip: text-decoration;
   -webkit-text-fill-color: transparent;
-  font-size: 21px;
 }
 
 p {
