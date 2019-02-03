@@ -6,7 +6,6 @@
 body {
   color: white;
   font-family: "Roboto", sans-serif;
-  margin: 0 auto;
   background-image: url("../img/water.jpeg"); /**/
   background-color: slategray;
   background-blend-mode: multiply;
@@ -43,11 +42,8 @@ header {
 }
 
 #heading {
-  font-size: 56px;
+  font-size: 40px;
   margin-bottom: 4%;
-}
-header p {
-  font-size: 18px;
 }
 
 header, main, .grid-wrapper {
@@ -85,14 +81,11 @@ button:hover{
 
 main {
   display: grid;
-  grid-template-rows: repeat(3, 50vw);
+  grid-template-rows: repeat(3, 55vw);
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 3%;
   justify-content: center;
-}
-
-#synopsis {
-   grid-row: span 2;
+  margin-bottom: 25%;
 }
 
 #synopsis a {
@@ -213,12 +206,15 @@ footer ul {
   width: 100%;
   list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   font-size: 18px;
 }
 
 footer li {
   margin: 0 60px 0 0;
+  line-height: 150%;
+
 }
 
 /******* Other Text Styles *********************************/
@@ -246,16 +242,28 @@ h2 {
 }
 
 /******* Responsive Media Queries *********************************/
+@media (min-width: 500px) {
+  main {
+    grid-template-rows: repeat(2, 50vw);
+  }
+}
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
+  #heading {
+    font-size: 56px;
+  }
+  header p {
+    font-size: 18px;
+  }
   #cast {
     grid-template-rows: repeat(2, 50vw);
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 25%;
   }
   main {
-    grid-template-rows: repeat(3, 25vw);
+    grid-template-rows: repeat(4, 25vw);
     grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 10%;
   }
   video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
     grid-row: span 2;
@@ -268,7 +276,18 @@ h2 {
     height: 18px;
   }
 
+  footer ul {
+    flex-direction: row;
+  }
+
 }
+@media (min-width: 750px) {
+  main {
+    grid-template-rows: repeat(3, 25vw);
+    margin-bottom: 25%;
+  }
+}
+
 
 @media (min-width: 1100px) {
   #cast {
