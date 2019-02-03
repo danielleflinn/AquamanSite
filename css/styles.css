@@ -3,6 +3,7 @@
 *https://daneden.github.io/animate.css
 */
 
+
 body {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -209,10 +210,12 @@ footer ul {
 }
 
 footer li {
-  margin: 0 60px 0 0;
+  margin: 0 65px 0 0;
   line-height: 150%;
-
 }
+
+#b2t {
+font-size: 14px;}
 
 /******* Other Text Styles *********************************/
 a {
