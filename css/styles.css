@@ -197,6 +197,10 @@ figcaption h4:hover {
   top: 65px;
 }
 
+#facebook:hover, #twitter:hover, #instagram:hover {
+  filter: brightness(.8);
+}
+
 /******* Footer ***************************/
 
 footer {
