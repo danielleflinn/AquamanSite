@@ -151,7 +151,7 @@ figcaption h4:hover {
   -webkit-text-fill-color: transparent;
 }
 
-/******** Social Side Nav*****************/
+/******** Social Side Nav *****************/
 
 #social-nav {
   position: fixed;
@@ -175,7 +175,7 @@ figcaption h4:hover {
 }
 
 #facebook {
-  top: -5px;
+  top: -3px;
   left: 11px;
 }
 
