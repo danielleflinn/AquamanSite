@@ -48,7 +48,7 @@ header {
 }
 
 header, main, .grid-wrapper {
-  padding: 0 10%;
+  margin: 0 10%;
 }
 
 /******* Custom Media Player *********************************/
@@ -285,7 +285,7 @@ h2 {
     grid-template-rows: repeat(1, 28vw);
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 4%;
-    margin: 5% 0 5% 0;
+    margin: 5% 10% 5% 10%;
   }
 
   video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
