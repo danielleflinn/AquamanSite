@@ -50,6 +50,22 @@ header {
 header, main, .grid-wrapper {
   margin: 0 10%;
 }
+/******* Title Kerning *********************************/
+span.char1 {
+  margin-right: .01em;
+}
+
+span.char2 {
+  margin-right: .03em;
+}
+
+span.char4 {
+  margin-left: -.025em;
+    margin-right: .03em;
+}
+span.char5, span.char6 {
+    margin-right: .03em;
+}
 
 /******* Custom Media Player *********************************/
 
@@ -203,6 +219,7 @@ footer ul {
   -webkit-box-size: border-box;
   width: 100%;
   list-style: none;
+  padding-inline-start: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,7 +227,6 @@ footer ul {
 }
 
 footer li {
-  margin: 0 65px 0 0;
   line-height: 150%;
 }
 
@@ -234,7 +250,7 @@ a:hover {
 }
 
 p {
-   line-height: 130%;
+   line-height: 138%;
 }
 
 h2 {
