@@ -37,9 +37,14 @@ nav ul {
 
 /******* Page Title and Quote *********************************/
 
+header, main, .grid-wrapper {
+  margin: 0 10%;
+}
+
 header {
   text-align: center;
   font-family: "Major Mono Display", monospace;
+  margin-bottom: 8%;
 }
 
 #heading {
@@ -47,9 +52,6 @@ header {
   margin-bottom: 4%;
 }
 
-header, main, .grid-wrapper {
-  margin: 0 10%;
-}
 /******* Title Kerning *********************************/
 span.char1 {
   margin-right: .01em;
@@ -100,6 +102,10 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 10%;
+}
+
+#synopsis {
+  margin-top: 4%;
 }
 
 #synopsis a {
@@ -245,7 +251,6 @@ nav a, #cast a {
 a:hover {
   background: -webkit-linear-gradient(85deg, #5cccc2, white 80%);
   -webkit-background-clip: text;
-  -webkit-background-clip: text-decoration;
   -webkit-text-fill-color: transparent;
 }
 
@@ -254,7 +259,7 @@ p {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 /******* Responsive Media Queries *********************************/
@@ -263,39 +268,47 @@ h2 {
   #heading {
     font-size: 56px;
   }
+
   header p {
     font-size: 18px;
   }
+
   #cast {
     grid-template-rows: repeat(2, 50vw);
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 25%;
   }
 
-  video, .mejs__container, .mjs_mediaelementplayer, .mejs__overlay, .mejs__layer {
-    grid-row: span 2;
-  }
   #social-nav {
     width: 35px;
     height: 110px;
   }
+
   #facebook, #twitter, #instagram {
     height: 18px;
   }
 
   footer ul {
+    width: 400px;
+    margin: 0 auto;
     flex-direction: row;
+    justify-content: space-between;
   }
 
 }
 
 
 @media (min-width: 1100px) {
+  header {
+    margin-bottom: 0;
+  }
+
   #cast {
     grid-template-rows: repeat(1, 30vw);
     grid-template-columns: repeat(4, 1fr);
     margin: 5% 0 5% 0;
   }
+
   main {
     display: grid;
     grid-template-rows: repeat(1, 28vw);
@@ -311,16 +324,18 @@ h2 {
 
   #synopsis {
     grid-column: span 2;
+    margin-top: 0;
   }   
   
   #heading {
-    font-size: 95px;
+    font-size: 100px;
     margin-bottom: 4%;
   }
 
   nav {
     height: 25px;
   }
+
   nav a {
     font-size: 20px;
   }

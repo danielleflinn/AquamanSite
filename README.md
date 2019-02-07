@@ -9,6 +9,7 @@ Movie Trailer framework using Atomic Design process (Winter 2019).
 ## Project Dependencies
 * [Media Element Player](https://www.mediaelementjs.com/)
 * [Layout Template](https://codepen.io/geoffgraham/pen/jaqWMJ)
-## Plugins
-* [AOS css](https://unpkg.com/aos@2.3.0/dist/aos.css)
-* [Animate on Scroll js (AOS)](https://unpkg.com/aos@2.3.0/dist/aos.js)
+    ### Plugins
+    * [Lettering JS](http://letteringjs.com/)
+    * [AOS css](https://unpkg.com/aos@2.3.0/dist/aos.css)
+    * [Animate on Scroll js (AOS)](https://unpkg.com/aos@2.3.0/dist/aos.js)
